@@ -1,0 +1,18 @@
+@mixin useRem($design-size){
+  $device-size-list:$design-size,480px,414px,375px,360px,320px;
+  @each $v in $device-size-list{
+    @media screen and(max-width:#{$v}){
+      html{
+        font-size:100px*$v/$design-size;
+      }
+    }
+  }
+}
+@mixin positionCenter(){
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
