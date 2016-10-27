@@ -1,4 +1,4 @@
-body, ul, li, a, input, image {
+body, ul, li, a, input, image, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -60,7 +60,9 @@ body {
 
 .tm-mobile-page {
   width: 100%;
-  height: auto; }
+  height: auto;
+  position: relative;
+  overflow: hidden; }
   .tm-mobile-page .tm-mobile-header {
     width: 100%;
     height: 0.9rem;
@@ -455,6 +457,175 @@ body {
             color: #afafaf;
             margin-top: 0.22rem; }
           .tm-mobile-page .hot-job-content .bottom ul li .pice {
-            margin-top: 0.22rem;
             width: 100%;
+            height: 1.8rem; }
+            .tm-mobile-page .hot-job-content .bottom ul li .pice img {
+              width: 100%;
+              height: 100%; }
+  .tm-mobile-page .qijina-content {
+    width: 100%; }
+    .tm-mobile-page .qijina-content ul {
+      height: 0.76rem; }
+      .tm-mobile-page .qijina-content ul li {
+        box-sizing: border-box;
+        border: 2px solid #f0f0f0;
+        width: 50%;
+        float: left; }
+        .tm-mobile-page .qijina-content ul li .top {
+          height: 2.07rem; }
+          .tm-mobile-page .qijina-content ul li .top .con-l {
+            float: left;
+            width: 2.07rem;
+            height: 2.07rem; }
+            .tm-mobile-page .qijina-content ul li .top .con-l img {
+              width: 100%;
+              height: 100%; }
+          .tm-mobile-page .qijina-content ul li .top .con-r {
+            float: left;
+            width: 1rem;
             height: 100%; }
+            .tm-mobile-page .qijina-content ul li .top .con-r div {
+              box-sizing: border-box;
+              border: 1px solid #fff;
+              height: 50%; }
+              .tm-mobile-page .qijina-content ul li .top .con-r div img {
+                width: 100%;
+                height: 100%; }
+        .tm-mobile-page .qijina-content ul li .bottom {
+          width: 100%;
+          height: 0.58rem;
+          font-size: 12px;
+          margin-top: 0.08rem; }
+          .tm-mobile-page .qijina-content ul li .bottom .shop-logo {
+            float: left;
+            width: 0.5rem;
+            height: 0.5rem; }
+            .tm-mobile-page .qijina-content ul li .bottom .shop-logo img {
+              width: 100%;
+              height: 100%; }
+          .tm-mobile-page .qijina-content ul li .bottom .shop-info {
+            margin-left: 0.65rem;
+            height: 100%; }
+            .tm-mobile-page .qijina-content ul li .bottom .shop-info .shop-name {
+              color: #2f2f2f;
+              font-weight: bold;
+              line-height: 0.25rem; }
+            .tm-mobile-page .qijina-content ul li .bottom .shop-info .shop-desc {
+              color: #9b9b9b;
+              float: left;
+              width: 2.4rem;
+              line-height: 0.25rem; }
+    .tm-mobile-page .qijina-content .mui li {
+      width: 25%;
+      height: 2.7rem;
+      border: none; }
+      .tm-mobile-page .qijina-content .mui li a .title-con {
+        height: 1rem;
+        text-align: center;
+        font-size: 12px; }
+        .tm-mobile-page .qijina-content .mui li a .title-con .title {
+          font-weight: bold;
+          color: #000;
+          line-height: 0.5rem; }
+        .tm-mobile-page .qijina-content .mui li a .title-con .sub-title {
+          color: #9b9b9b; }
+      .tm-mobile-page .qijina-content .mui li a .img-con {
+        height: 1.5rem; }
+        .tm-mobile-page .qijina-content .mui li a .img-con img {
+          width: 100%;
+          height: 100%; }
+  .tm-mobile-page .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    transition: transform .8s ease;
+    transform: translate3d(-100%, 0, 0); }
+    .tm-mobile-page .nav.active {
+      transform: translate3d(0, 0, 0); }
+    .tm-mobile-page .nav .nav-container {
+      width: 100%;
+      height: 100%; }
+      .tm-mobile-page .nav .nav-container .table-cov {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: .7;
+        position: fixed; }
+        .tm-mobile-page .nav .nav-container .table-cov p {
+          position: absolute;
+          width: 0.2rem;
+          right: 0.26rem;
+          top: 50%;
+          margin-top: -0.8rem;
+          font-size: 14px;
+          color: #B5B5B5; }
+      .tm-mobile-page .nav .nav-container .table-container {
+        width: 5.7rem;
+        height: 100%;
+        display: block;
+        position: fixed; }
+        .tm-mobile-page .nav .nav-container .table-container .header {
+          width: 100%;
+          height: 0.87rem;
+          background: #eee; }
+          .tm-mobile-page .nav .nav-container .table-container .header h1 {
+            font-weight: 400;
+            float: left;
+            width: 23%;
+            text-align: center;
+            line-height: 0.87rem;
+            color: #333;
+            font-size: 14px; }
+        .tm-mobile-page .nav .nav-container .table-container .content {
+          width: 100%;
+          height: auto; }
+          .tm-mobile-page .nav .nav-container .table-container .content .tab-nav {
+            width: 1.3rem;
+            background: #eee;
+            color: #9b9b9b;
+            font-size: 14px;
+            float: left;
+            overflow: auto; }
+            .tm-mobile-page .nav .nav-container .table-container .content .tab-nav ul {
+              overflow: auto; }
+              .tm-mobile-page .nav .nav-container .table-container .content .tab-nav ul li {
+                width: 1.3rem;
+                height: 1.2rem;
+                text-align: center;
+                line-height: 1.2rem;
+                box-sizing: border-box;
+                border-bottom: 1px solid #e1e1e1; }
+                .tm-mobile-page .nav .nav-container .table-container .content .tab-nav ul li.aci {
+                  background: #fff; }
+          .tm-mobile-page .nav .nav-container .table-container .content .tab-menu {
+            float: left;
+            width: 4.4rem;
+            height: auto;
+            position: relative;
+            background: #eee; }
+            .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li {
+              width: 100%; }
+              .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li .tab-list {
+                width: 100%;
+                height: 4.4rem;
+                background: #fff; }
+                .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li .tab-list h2 {
+                  font-size: 14px;
+                  line-height: 1.2rem;
+                  color: #9B9B9B;
+                  padding-left: 0.2rem; }
+                .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li .tab-list ul li {
+                  float: left;
+                  width: 33.3%;
+                  height: 1.4rem;
+                  text-align: center; }
+                  .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li .tab-list ul li a {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    font-size: 12px;
+                    color: #000; }
+                    .tm-mobile-page .nav .nav-container .table-container .content .tab-menu .tab-ul .tab-li .tab-list ul li a img {
+                      width: 1rem;
+                      height: 1rem; }

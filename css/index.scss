@@ -1,4 +1,4 @@
-body, ul, li, a, input, image {
+body, ul, li, a, input, image,h1,h2,h3,h4,p{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -47,7 +47,8 @@ body {
 .tm-mobile-page {
   width: 100%;
   height: auto;
-
+  position:relative;
+  overflow: hidden;
   .tm-mobile-header {
     width: 100%;
     height: 0.9rem;
@@ -634,13 +635,235 @@ body {
             margin-top:0.22rem;
           }
           .pice{
-            margin-top:0.22rem;
             width:100%;
-            height:100%;
+            height:1.8rem;
+              img{
+                width:100%;
+                height:100%;
+              }
           }
         }
       }
     }
   }
-  .qijina-content{}
+  .qijina-content{
+     width:100%;
+     ul{
+       height:0.76rem;
+       li{
+         box-sizing: border-box;
+         border:2px solid #f0f0f0;
+         width:50%;
+         float:left;
+         .top{
+           height:2.07rem;
+           .con-l{
+             float:left;
+             width:2.07rem;
+             height:2.07rem;
+             img{
+               width:100%;
+               height:100%;
+             }
+           }
+           .con-r{
+             float:left;
+             width:1rem;
+             height:100%;
+             div{
+               box-sizing: border-box;
+               border:1px solid #fff;
+               height:50%;
+               img{
+                 width:100%;
+                 height:100%;
+               }
+             }
+           }
+
+         }
+         .bottom{
+           width:100%;
+           height:0.58rem;
+           font-size:12px;
+           margin-top:0.08rem;
+            .shop-logo{
+              float:left;
+              width:0.5rem;
+              height:0.5rem;
+              img{
+                width:100%;
+                height:100%;
+              }
+            }
+           .shop-info{
+             margin-left:0.65rem;
+             height:100%;
+             .shop-name{
+               color:#2f2f2f;
+               font-weight: bold;
+               line-height: 0.25rem;
+             }
+             .shop-desc{
+               color:#9b9b9b;
+               float:left;
+               width:2.4rem;
+               line-height: 0.25rem;
+
+             }
+           }
+
+         }
+       }
+     }
+    .mui{
+      li{
+        width:25%;
+        height:2.7rem;
+        border:none;
+        a{
+          .title-con{
+            height:1rem;
+            text-align: center;
+            font-size:12px;
+            .title{
+              font-weight: bold;
+              color:#000;
+              line-height: 0.5rem;
+            }
+            .sub-title{
+              color:#9b9b9b;
+            }
+          }
+          .img-con{
+            height:1.5rem;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100vh;
+    z-index: 10;
+    transition:transform .8s ease ;
+    transform: translate3d(-100%,0,0);
+    &.active{
+      transform: translate3d(0,0,0);
+    }
+    .nav-container{
+      width:100%;
+      height:100%;
+       .table-cov{
+         width:100%;
+         height:100%;
+         background:#000;
+         opacity:.7;
+         position: fixed;
+         p{
+           position:absolute;
+           width: 0.2rem;
+           right: 0.26rem;
+           top: 50%;
+           margin-top:-0.8rem;
+           font-size: 14px;
+           color: #B5B5B5;
+         }
+       }
+      .table-container{
+        width:5.7rem;
+        height:100%;
+        display: block;
+        position: fixed;
+        .header{
+          width:100%;
+          height:0.87rem;
+          background:#eee;
+          h1{
+            font-weight: 400;
+            float: left;
+            width: 23%;
+            text-align: center;
+            line-height: 0.87rem;
+            color: #333;
+            font-size: 14px;
+          }
+        }
+        .content{
+          width:100%;
+          height:auto;
+          .tab-nav{
+            width: 1.3rem;
+            height:9.6rem;
+            background:#eee;
+            color:#9b9b9b;
+            font-size:14px;
+            float:left;
+            overflow: auto;
+            ul{
+              li{
+                width:1.3rem;
+                height:1.2rem;
+                text-align: center;
+                line-height: 1.2rem;
+                box-sizing: border-box;
+                border-bottom: 1px solid #e1e1e1;
+                &.aci{
+                  background:#fff;
+                }
+              }
+            }
+          }
+          .tab-menu{
+            float:left;
+            width:4.4rem;
+            height:auto;
+            position: relative;
+            background:#eee;
+            .tab-ul{
+              .tab-li{
+                width:100%;
+                .tab-list{
+                  h2{
+                    font-size: 14px;
+                    line-height: 1.2rem;
+                    color: #9B9B9B;
+                    padding-left:0.2rem;
+                  }
+                  width:100%;
+                  height:4.4rem;
+                  background:#fff;
+                  ul{
+                    li{
+                      float:left;
+                      width:33.3%;
+                      height:1.4rem;
+                      text-align: center;
+
+                      a{
+                        width:1.2rem;
+                        height:1.2rem;
+                        font-size:12px;
+                        color:#000;
+                        img{
+                          width:1rem;
+                          height:1rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
